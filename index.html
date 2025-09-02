@@ -1,105 +1,103 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        /* .dhruv{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
 
-        }
 
-         #para{
+   <style>
+   *{
+      margin: 0;
+   }
+   /* // pseudo -elements  */
 
-         } */
+/* div::first-letter{
+   color: red ;
+   font-weight: 600;
+   font-size: 30px;
+   font-style: italic;
+} */
+
+
+
+/* div::first-line{
+   background-color: aqua;
+}
+
+div::selection{
+   background: orange;
+}
+
+div::after{
+   content:"</p>";
+}
+
+div::before{
+   content:"<p>";
+}
+
+div::spelling-error{
+   background: red;
+} */
 /* 
- .div-1 p{
-background: aqua;    
- }
- */
-
- /* .div-1~p{
-    background: yellow ;
- } */
-
- /* div:hover{
-    background: aqua;
- }
-
- h1:hover{
-    font-size: 50px;
- } */
-
-  a:link{
-    color: black;
- }
- a:hover{
-    color: yellow;
- }
+.boxes{
+   height: 50px;
+   width: 200px;
+   background: aqua;
+   border: 1px solid black;
+   display: inline-block;
+} */
 
 
- a:active{
-    color: brown;
- }
+.parent-box{
+   display: flex;
+   gap: 10px ;
+      justify-content: space-evenly;
+      height: 1000px;
+      align-items:start;
+flex-direction: column;
+background-color: pink;
+}
 
- a:visited{
-    color: orange;
- }
-    </style>
- </head>
- <body>
-    <!-- class / id  -->
- 
-    <!-- <div class="dhruv"></div>
-    <p id="para"></p> -->
+.boxes{
+   height: 30px;
+   width: 30px;
+   background-color: red;
+   border: 1px solid black;
+}
+   </style>
+</head>
 
 
-    <!-- 4  -->
-     <!-- descendent  -->
+<body>
+   
 
-     <!-- <div class="div-1">
-        <p>bchebce</p>
-<div>
-    <p>cbegce</p>
-</div>
-
-<div>
-    <div>
-        <p>vcgevge</p>
-    </div>
-</div>
-     </div>
-
-<p>cvhbg</p> -->
-
-<!-- // siblings - next / adjacent , subsequent/ overall -->
-
-<!-- <div class="div-1">
-
-</div>
-<p>helolo world </p>
-<button>hgshg</button>
-<p>bfheb</p> -->
-
-<!-- pseudo classes -->
 <!-- <div>
-    hello world
-</div>
 
-<h1>bwh</h1> -->
 
-<a href="https://www.youtube.com">yt</a>
 
-<!-- link, visited, active , hover  -->
+  worlld
 
-</body>
- </html>
-
-   <!-- combinator selector  -->
-
-   <!-- div .class= div-1  -->
-<!-- <p></p> -->
-<!-- <p></p>    
-<div>
-    <p></p>
+  
+ 
 </div> -->
+
+<!-- <div contenteditable="true">
+hello world 
+</div> -->
+
+
+<!-- <button>click me </button> -->
+ <!-- <marquee  direction="right">hello world </marquee> -->
+
+ <!-- //flex -->
+
+ <div class="parent-box">
+<div class="boxes">1</div>
+<div class="boxes">2</div>
+<div class="boxes">3</div>
+<div class="boxes">4</div>
+ </div>
+</body>
+</html>
