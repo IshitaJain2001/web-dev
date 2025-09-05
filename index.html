@@ -5,99 +5,58 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
 
-
    <style>
-   *{
-      margin: 0;
-   }
-   /* // pseudo -elements  */
-
-/* div::first-letter{
-   color: red ;
-   font-weight: 600;
-   font-size: 30px;
-   font-style: italic;
-} */
-
-
-
-/* div::first-line{
-   background-color: aqua;
-}
-
-div::selection{
-   background: orange;
-}
-
-div::after{
-   content:"</p>";
-}
-
-div::before{
-   content:"<p>";
-}
-
-div::spelling-error{
-   background: red;
-} */
-/* 
-.boxes{
-   height: 50px;
-   width: 200px;
-   background: aqua;
-   border: 1px solid black;
-   display: inline-block;
-} */
-
-
-.parent-box{
+body{
+   height: 100vh;
    display: flex;
-   gap: 10px ;
-      justify-content: space-evenly;
-      height: 1000px;
-      align-items:start;
-flex-direction: column;
-background-color: pink;
+   flex-direction: column;
+   align-items: center;
+   background: black;
+   color: white;
+
 }
 
-.boxes{
-   height: 30px;
-   width: 30px;
-   background-color: red;
-   border: 1px solid black;
+h1{
+   text-align: center;
 }
+
+.grid{
+   display: grid;
+   grid-template-columns: repeat(3, 250px);
+   row-gap: 20px;
+}
+
+.grid img{
+   height: 180px;
+   width: 180px;
+   box-shadow: 1px 2px 6px white;
+   filter: grayscale(70%)
+}
+
+.grid img:hover{
+   transform: scale(1.1);
+    filter: grayscale(0%)
+}
+
    </style>
 </head>
-
-
 <body>
-   
+   <h1>IMAGE GALLERY </h1>
+   <div class="grid">
+      <a href="aivars-vilks-5JhJT_oGmAk-unsplash.jpg" download="myImage.jpg">
 
-<!-- <div>
+     
+      <img src="aivars-vilks-5JhJT_oGmAk-unsplash.jpg" alt="" title="image-1">
 
-
-
-  worlld
-
-  
- 
-</div> -->
-
-<!-- <div contenteditable="true">
-hello world 
-</div> -->
-
-
-<!-- <button>click me </button> -->
- <!-- <marquee  direction="right">hello world </marquee> -->
-
- <!-- //flex -->
-
- <div class="parent-box">
-<div class="boxes">1</div>
-<div class="boxes">2</div>
-<div class="boxes">3</div>
-<div class="boxes">4</div>
- </div>
+       </a>
+      <img src="aleksandr-zaitsev-HaeOWdMCJSQ-unsplash.jpg" alt="">
+      <img src="annie-spratt-n1QV9Ph-QG8-unsplash.jpg" alt="">
+      <img src="fadhil-abhimantra-vS7GjQ3lY3M-unsplash.jpg" alt="">
+      <img src="mircea-solomiea-fhUyB4GLfYM-unsplash.jpg" alt="">
+      <img src="richard-stachmann-Q2rs7ahebDw-unsplash.jpg" alt="">
+      <img src="willian-justen-de-vasconcellos-UIjPYiFM704-unsplash (1).jpg" alt="">
+      <img src="willian-justen-de-vasconcellos-UIjPYiFM704-unsplash.jpg" alt="">
+      <img src="zetong-li-qNY60EkL3nE-unsplash.jpg" alt="">
+   </div>
 </body>
 </html>
