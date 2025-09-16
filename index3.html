@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=1 , initial-scale=1.0">
+   <title>Document</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+      nav{
+         display: flex;
+         width: 100vw;
+         justify-content: space-between;
+         padding: 30px ;
+         align-items: center;
+         height: 100px;
+         background: gray;
+         font-size: 30px;
+      }
+      button{
+            font-size: 30px;
+            background: transparent;
+            border: transparent;
+      }
+
+      .center{
+        display: flex;
+        width: 35%;
+        gap: 15px;
+      }
+/* max 
+min */
+      @media (max-width:425px){
+/* font-size: 12px; */
+nav{
+font-size: 12px;
+}
+button{
+font-size: 12px;
+}
+.center{
+    width: 50%;
+}
+      }
+
+      
+   </style>
+</head>
+<body>
+  <nav>
+   <div class="left">
+      <p>logo</p>
+   </div>
+   <div class="center">
+      <button>home</button>
+      <button>about us</button>
+      <button>contact us</button>
+   </div>
+   <div class="right">
+      <button>login</button>
+      <button>register</button>
+   </div>
+  </nav> 
+</body>
+</html>
+
+      
